@@ -1,0 +1,30 @@
+select,
+::picker(select) {
+	appearance: base-select;
+}
+
+select {
+	width: 100%;
+	font-size: 22px;
+}
+
+selectedcontent,
+option {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+option {
+	padding-block: 1rem;
+}
+
+/* Remove the default checkmark from the selected option */
+option::before,
+option::checkmark {
+	display: none;
+}
+
+option:checked {
+	background: #eee;
+}
